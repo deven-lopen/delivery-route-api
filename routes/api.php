@@ -11,8 +11,8 @@ use Illuminate\Support\Facades\Route;
 // add admin middleware
 // find reference for algo
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return User::get();
+Route::get('/connect', function (Request $request) {
+    return 'Connected';
 });
 
 
